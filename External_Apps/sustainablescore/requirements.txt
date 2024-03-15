@@ -1,0 +1,6 @@
+altair
+numpy
+pandas
+pydeck
+streamlit
+bs4
