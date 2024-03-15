@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>SustainX</title>
+		<link
+			rel="stylesheet"
+			href="./css/style.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./css/button.css"
+		/>
+	</head>
+
+	<body>
+		<audio
+			id="entrySound"
+			src="./assets/sounds/main.mp3"
+			preload="auto"
+		></audio>
+		<audio
+			id="letsGoSound"
+			src="./assets/sounds/letsgo.mp3"
+			preload="auto"
+		></audio>
+		<div class="cursor">
+			<img
+				src="https://i.ibb.co/tXrLb7v/butterfly1.png"
+				alt=""
+				class="image"
+			/>
+		</div>
+		<div id="trail-container"></div>
+
+		<header>
+			<h2 class="logo">SustainX</h2>
+			<nav class="navigation">
+				<a
+					href="#"
+					class="active"
+					>Home</a
+				>
+				<a href="#about">About</a>
+				<a href="#">Mission</a>
+				<a href="#">Tools</a>
+			</nav>
+		</header>
+		<section class="parallax">
+			<img
+				src="./Assets/hill1.png"
+				id="hill1"
+			/>
+			<img
+				src="./Assets/hill2.png"
+				id="hill2"
+			/>
+			<img
+				src="./Assets/hill3.png"
+				id="hill3"
+			/>
+			<img
+				src="./Assets/hill4.png"
+				id="hill4"
+			/>
+			<img
+				src="./Assets/hill5.png"
+				id="hill5"
+			/>
+			<img
+				src="./Assets/tree.png"
+				id="tree"
+			/>
+			<h2 id="text">Let's be Sustainable</h2>
+			<img
+				src="./Assets/leaf.png"
+				id="leaf"
+			/>
+			<img
+				src="./Assets/plant.png"
+				id="plant"
+			/>
+			<!-- <div class="block"></div> -->
+		</section>
+
+		<section class="sec" id="about">
+			<div class="secWrapper glass">
+				<div class="logoWrapper">
+					<img
+						src="./assets/logoGreenFootPrint.svg"
+						alt="The Green Footprint Logo"
+					/>
+				</div>
+				<p class="HeroInfo">
+					Welcome to SustainX, your partner in creating a better
+					world! 🌎 We're here to guide you on a thrilling journey
+					towards sustainability, where every step you take
+					contributes to a greener future. To begin your eco-friendly
+					adventure, simply click the "Start" button below. You'll
+					find resources and inspiration to adopt sustainable habits,
+					reduce your environmental impact, and become part of a
+					movement that's changing the world. Together, we'll make
+					sustainability not just a choice, but a way of life! Are you
+					ready to join the revolution?
+				</p>
+				<div class="centrecontainer">
+					<img src="./assets/arrows.svg" alt="arrows in the background" class="arrows">
+					<div class="button-borders">
+						<button class="primary-button btn">Get Started</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="footer">
+			<footer>
+				<img src="./assets/footer.svg" alt="Footer Image">
+			</footer>
+		</section>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="./js/script.js"></script>
+		<script src="./js/cursor.js"></script>
+		<!-- <script src="./js/smoothscroll.js"></script> -->
+		<!-- Ensure jQuery is included before this script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				var entrySound = $("#entrySound")[0]; // Get the native audio element for entry sound
+				var letsGoSound = $("#letsGoSound")[0]; // Get the native audio element for the hover sound
+
+				// Attempt to play the entry sound on page load
+				entrySound.play().catch(function (error) {
+					console.error(
+						"Playback prevented due to browser restrictions. User must interact with the document.",
+						error
+					);
+				});
+
+				// When .btn elements are hovered, pause entrySound and play letsGoSound
+				$(".btn").mouseenter(function () {
+					// Pause and reset the entry sound
+					entrySound.pause();
+					entrySound.currentTime = 0;
+
+					// Play the letsGoSound
+					letsGoSound.play().catch(function (error) {
+						console.error(
+							"Playback prevented due to browser restrictions:",
+							error
+						);
+					});
+				});
+			});
+		</script>
+	</body>
+</html>
