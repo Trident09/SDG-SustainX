@@ -1,0 +1,88 @@
+<!doctype html>
+<!-- /******************************
+      *                            *
+      *       Cursor Parking       *
+      *                            *
+      ******************************/ -->
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>ML Based Waste Sorting Tool</title>
+    <script src="app.js"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;1,9..144,100;1,9..144,200;1,9..144,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contentarea">
+        <h1>
+            <b>ML Based Waste Sorting System</b>
+        </h1>
+        <div class="tagline">
+            <div class="img">
+                <img src="./images/Banner.png" alt="Banner">
+                <h3>
+                    The Garbage Idea
+                </h3>
+            </div>
+        </div>
+        <br>
+        <div class="camera">
+            <div id="cameraContainer">
+                <img id="frame" src="./images/frame.png" alt="Banner">
+                <video id="video" style="display: block;">Video stream not available.</video>
+                <canvas id="canvas" style="display: none;"></canvas>
+                <img id="photo" alt="The screen capture will appear in this box." style="display: none;">
+            </div>
+        </div>
+        <!-- <div>
+            <img id="plant" src="./images/Plant.png" alt="cute plant">
+        </div> -->
+            <img id="note" src="./images/Note.png" alt="note" style="display: none;">
+        <div>
+            <img id="info" src="./images/cardboard.png" alt="info">
+        </div>
+        <div>
+            <button id="startbutton">Take Photo</button>
+            <button id="backbutton" style="display: none;">Retake Photo</button>
+            <button id="submit" style="display: none;">Sort Item</button>
+            <!-- <button id="submit" style="display: none;" onclick="init()">GO</button> -->
+        </div>
+        <!-- <div id="location">
+            <label for="locationLabel" style="color:rgb(12, 86, 12)">Choose location:</label> 
+             <select name="location" id="location"> -->
+                <select id="locationSelect" hidden>
+                    <option value="toronto" selected>Toronto</option>
+                    <option value="hamilton">Hamilton</option>
+                </select>
+        </div>
+        <div>
+            <img id="recycle" src="./images/Recycle.png" alt="recycle" style="display: none">
+        </div>
+        <div>
+            <img id="garbage" src="./images/Garbage.png" alt="garbage"  style="display: none">
+        </div>
+    </div>
+    
+    
+    
+    <!-- Given code for ML model -->
+
+    <!-- <button type="button" onclick="init()">Start</button> -->
+    <div id="webcam-container"></div>
+    <div id="label-container" style="display: none;" ></div>
+    <div class="result">
+        <div id="highest-confidence" ></div>
+        <div id="sort-category" ></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+
+</body> 
+
+</html> 
