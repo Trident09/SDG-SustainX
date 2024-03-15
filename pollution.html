@@ -37,18 +37,24 @@
 			<!-- <div class="pure-g" style="margin-top: 0; margin-bottom: 0">
             <div class="pure-u-1"> -->
 			<label for="cityInput">City/country name:</label>
-			<input
-				style="max-width: 40%"
-				type="text"
-				id="cityInput"
-				placeholder="Delhi"
-			/>
-			<button
-				id="fetchAndSetParticles"
-				style="margin-top: 1em"
-			>
-				Submit
-			</button>
+			<form class="form">
+				<input
+					style="max-width: 40%"
+					type="text"
+					class="location__field"
+					id="cityInput"
+					placeholder="Your Location"
+				/>
+				<button
+					type="button"
+					class="update-btn btn--primary btn--inside uppercase"
+					id="fetchAndSetParticles"
+					style="margin-top: 1em"
+				>
+					Update
+				</button>
+			</form>
+
 			<div
 				class="pure-g"
 				style="
@@ -89,5 +95,49 @@
 
 		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 		<script src="./js/pollution.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", (event) => {
+				// Use querySelector to select the button using its class
+				var updateButton = document.querySelector(
+					".update-btn.btn--primary.btn--inside.uppercase"
+				);
+
+				// Define the function to be called when the button is clicked
+				updateButton.addEventListener("click", function () {
+					// Use querySelector to get the value from the input with class 'location__field'
+					var locationValue = document
+						.querySelector(".location__field")
+						.value.trim();
+
+					// Only proceed with non-empty location value
+					if (locationValue) {
+						// Retrieve the existing JSON object from local storage
+						var userDataJSON = localStorage.getItem("userData");
+
+						// Check if userData is not null, if it is, create an empty object
+						var userData = userDataJSON
+							? JSON.parse(userDataJSON)
+							: {};
+
+						// Add or update the location key with the new value
+						userData.location = locationValue;
+
+						// Convert the updated object back to a JSON string
+						var updatedUserDataJSON = JSON.stringify(userData);
+
+						// Save the updated JSON back to local storage
+						localStorage.setItem("userData", updatedUserDataJSON);
+
+						// Optionally, redirect to another page or indicate success
+						console.log(
+							"Location has been updated in local storage."
+						);
+					} else {
+						// Optionally, indicate that the input field is empty
+						console.log("No location entered.");
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
