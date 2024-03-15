@@ -385,7 +385,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (count == 0) {
 			particleCountLabel.innerHTML = `No particle data available`;
 		} else {
-			particleCountLabel.innerHTML = `<div class="pure-u-1-2 pure-u-xl-1-5"><img class="icon" style="margin-left: 0" src="./Assets/icon/orange.png">O<sup>3</sup>: ${o3ParticlesNumber}</div><div class="pure-u-1-2 pure-u-xl-1-5"><img class="icon" src="./Assets/icon/lightblue.png">SO<sup>2</sup>: ${so2ParticlesNumber}</div><div class="pure-u-1-2 pure-u-xl-1-5"><img class="icon" src="./Assets/icon/lightgreen.png">PM2.5:&nbsp${pm2_5ParticlesNumber}</div><div class="pure-u-1-2 pure-u-xl-1-5"><img class="icon" src="./Assets/icon/darkgreen.png">PM10: ${pm10ParticlesNumber}</div><div class="pure-u-1-2 pure-u-xl-1-5"><img class="icon" src="./Assets/icon/darkblue.png">NH<sup>3</sup>: ${nh3ParticlesNumber}</div>`;
+			particleCountLabel.innerHTML = `<div class="pure-u-1-2 pure-u-xl-1-5"><img class="icon" style="margin-left: 0" src="./assets/icon/orange.png">O<sup>3</sup>: ${o3ParticlesNumber}</div><div class="pure-u-1-2 pure-u-xl-1-5"><img class="icon" src="./assets/icon/lightblue.png">SO<sup>2</sup>: ${so2ParticlesNumber}</div><div class="pure-u-1-2 pure-u-xl-1-5"><img class="icon" src="./assets/icon/lightgreen.png">PM2.5:&nbsp${pm2_5ParticlesNumber}</div><div class="pure-u-1-2 pure-u-xl-1-5"><img class="icon" src="./assets/icon/darkgreen.png">PM10: ${pm10ParticlesNumber}</div><div class="pure-u-1-2 pure-u-xl-1-5"><img class="icon" src="./assets/icon/darkblue.png">NH<sup>3</sup>: ${nh3ParticlesNumber}</div>`;
 		}
 	}
 
