@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Certificate</title>
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: #013329;
+            }
+			#center {
+				min-height: 100vh;
+				min-width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+			}
+			#certificate-container {
+				position: relative;
+				text-align: center;
+				font-weight: 600;
+				/* Adjust as per your certificate size */
+				width: 600px;
+				height: 400px;
+			}
+			#certificate-image {
+				width: 100%;
+			}
+			#certificate-name {
+				position: absolute;
+				top: 40%; /* adjust top and left to place the name in the correct position*/
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-family: "Open Sans", sans-serif;
+				font-size: 24px;
+				color: black; /* Or any color that fits the certificate design */
+			}
+			#certificate-location {
+				position: absolute;
+				top: 50%; /* adjust top and left to place the name in the correct position*/
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-family: "Open Sans", sans-serif;
+				font-size: 24px;
+				color: black; /* Or any color that fits the certificate design */
+			}
+		</style>
+	</head>
+	<body>
+		<div id="center">
+			<div id="certificate-container">
+				<img
+					id="certificate-image"
+					src="./assets/certificate.png"
+					alt="Certificate Template"
+				/>
+				<div id="certificate-name"></div>
+				<div id="certificate-location"></div>
+			</div>
+		</div>
+
+		<!-- Add your scripts at the end of the body -->
+		<script>
+			// This function will run on page load
+			document.addEventListener("DOMContentLoaded", function () {
+				const json = localStorage.getItem("userData"); // Assuming the name is stored with this key
+				const userData = JSON.parse(json);
+                const name = userData.name;
+                const loc = userData.location;
+				const location = "From " + loc;
+				console.log(name);
+				console.log(location);
+				// const name = "Aviral Kaintura";
+				// const location = "From New Delhi";
+				if (name) {
+					document.getElementById("certificate-name").textContent =
+						name;
+					document.getElementById(
+						"certificate-location"
+					).textContent = location;
+				}
+			});
+		</script>
+	</body>
+</html>
