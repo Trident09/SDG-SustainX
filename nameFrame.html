@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>The Green FootPrint</title>
+		<link
+			rel="stylesheet"
+			href="./css/styleStart.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./css/continueButton.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./assets/name.css"
+		/>
+	</head>
+	<body>
+		<div class="nav">
+			<nav>
+				<a href="/">
+					<img
+						src="./assets/logoGreenFootPrint.svg"
+						alt="Green FootPrint logo"
+					/>
+				</a>
+			</nav>
+		</div>
+		<div class="container">
+			<div
+				class="framecontainer"
+				style="color: orange"
+			>
+				<div class="container">
+					<div class="container__item">
+						<form class="form">
+							<input
+								type="text"
+								class="form__field"
+								placeholder="Your Kind Name"
+							/>
+							<button
+								type="button"
+								class="btn btn--primary btn--inside uppercase"
+							>
+								Next
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="footer">
+			<footer>
+				<img
+					src="./assets/footer.svg"
+					alt="Footer Image"
+				/>
+			</footer>
+		</section>
+
+		<script>
+			// Inline JavaScript to handle the click event and redirect
+			document.addEventListener("DOMContentLoaded", (event) => {
+				// Use querySelector to select the button using its class
+				var nextButton = document.querySelector(
+					".btn.btn--primary.btn--inside.uppercase"
+				);
+
+				// Define the function to be called when the button is clicked
+				nextButton.addEventListener("click", function () {
+					// Use querySelector to get the value from the first input with class 'form__field'
+					var nameValue = document
+						.querySelector(".form__field")
+						.value.trim();
+
+					// If the input is not empty, store it and redirect
+					if (nameValue) {
+						// Create a JSON object with the name input
+						var jsonToStore = JSON.stringify({ name: nameValue });
+
+						// Store the JSON object in localStorage with a key
+						localStorage.setItem("userData", jsonToStore);
+
+						// Redirect to next.html in the same directory
+						window.location.href = "./pollFrame.html";
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
