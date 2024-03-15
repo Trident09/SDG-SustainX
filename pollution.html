@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Pollution Visualizer</title>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/purecss@2.1.0/build/base-min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/purecss@2.1.0/build/grids-min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./css/pollution.css"
+		/>
+	</head>
+
+	<body style="overflow: hidden">
+		<div id="particles-js"></div>
+
+		<div class="overlay glass">
+			<h1 style="margin-bottom: 0; margin-top: 0">Take a deep breath.</h1>
+			<p style="margin-top: 0; margin-bottom: 1em">
+				Enter your location to see a particle visualization of air
+				pollutant concentration in μg/m<sup>3</sup>:
+			</p>
+			<!-- <div class="pure-g" style="margin-top: 0; margin-bottom: 0">
+            <div class="pure-u-1"> -->
+			<label for="cityInput">City/country name:</label>
+			<input
+				style="max-width: 40%"
+				type="text"
+				id="cityInput"
+				placeholder="Delhi"
+			/>
+			<button
+				id="fetchAndSetParticles"
+				style="margin-top: 1em"
+			>
+				Submit
+			</button>
+			<!-- </div>
+        </div> -->
+
+			<!-- <div style="font-weight: bolder; margin-top: 0.5em; margin-left: -0.5em" id="cityInput"></div> -->
+			<div
+				class="pure-g"
+				style="
+					margin-top: 0;
+					margin-bottom: 0;
+					font-weight: bold;
+					padding: 0;
+				"
+			>
+				<div class="pure-u-1">
+					<p id="particleCountLabel"></p>
+				</div>
+			</div>
+			<hr style="opacity: 50%; margin-top: 1em" />
+			<p style="margin-bottom: 0; opacity: 80%">
+				Data from the
+				<a
+					href="https://openweathermap.org/api/air-pollution"
+					style="text-decoration: none; color: #EA6E50; font-weight: bold; opacity: 100%"
+					>OpenWeatherMap API</a
+				>
+				<img
+					style="
+						height: 1.2em;
+						padding: 0;
+						margin: auto;
+						opacity: 100%;
+					"
+					src="./Assets/emoji/tree.png"
+				/>
+			</p>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<script src="./js/pollution.js"></script>
+	</body>
+</html>
