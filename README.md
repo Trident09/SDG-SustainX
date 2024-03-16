@@ -20,29 +20,29 @@ The Green Footprint is a multi-faceted platform designed to promote sustainabili
 
 ## Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript
-- Python
-- Streamlit
-- TensorFlow.js
-- Pandas
-- NumPy
-- Matplotlib
-- Gemini
-- BERT
+-   HTML5
+-   CSS3
+-   JavaScript
+-   Python
+-   Streamlit
+-   TensorFlow.js
+-   Pandas
+-   NumPy
+-   Matplotlib
+-   Gemini
+-   BERT
 
 ## Quick Links
 
-- [Live Website](https://thegreenfootprint.vercel.app/)
-- [Main GitHub Repository](https://github.com/Trident09/SDG-SuatainX)
-- [Image Detection Custom Model (Google Colab)](https://colab.research.google.com/drive/1KRX8xM92F412yThksh9jnngM6zE1b5eY?usp=sharing)
-- [NLP Sustainability Model (BERT) Google Colab](https://colab.research.google.com/drive/1J5_52NrQbPbcmKfUIwg_c3E_pYPALSbr?usp=sharing)
+-   [Live Website](https://thegreenfootprint.vercel.app/)
+-   [Main GitHub Repository](https://github.com/Trident09/SDG-SuatainX)
+-   [Image Detection Custom Model (Google Colab)](https://colab.research.google.com/drive/1KRX8xM92F412yThksh9jnngM6zE1b5eY?usp=sharing)
+-   [NLP Sustainability Model (BERT) Google Colab](https://colab.research.google.com/drive/1J5_52NrQbPbcmKfUIwg_c3E_pYPALSbr?usp=sharing)
+-   [Project Demo Video](https://www.youtube.com/watch?v=4TgCbsVNT6k)
 
 ## Project Demo
 
-[![Project Demo](https://img.youtube.com/vi/4TgCbsVNT6k/0.jpg)](https://www.youtube.com/watch?v=4TgCbsVNT6k)
-
+<video src="https://cdn.discordapp.com/attachments/912237053809426472/1218429029355487262/Project_demo.mp4?ex=6607a175&is=65f52c75&hm=8f4e0a1ae03549c624bcee465b69f32d8857fb8b031ceb6dd279205ad37ff0a2&" width="480" height="360" controls></video>
 
 ## Usage
 
