@@ -1,4 +1,4 @@
-# The Green Footprint | Track 3 Winner - Preserving the environment 
+# The Green Footprint | Track 3rd - Preserving the environment | 1st Position Winner 
 
 ![SDG-SustainX Logo](./assets/logoGreenFootPrint.svg)
 
@@ -77,6 +77,12 @@ For using the NLP model, navigate to the Google Colab notebook:
 ## Contributions
 
 Contributions are welcome! Please feel free to submit a pull request or create an issue if you have suggestions for improvements.
+
+## Team
+
+| <img src="https://avatars.githubusercontent.com/u/98939183?v=4" width="100" height="100"> | <img src="https://avatars.githubusercontent.com/u/43810146?v=4" width="100" height="100"> |
+|:--:|:--:|
+| [Trident09](https://github.com/Trident09) | [error9098x](https://github.com/error9098x) |
 
 ## License
 
