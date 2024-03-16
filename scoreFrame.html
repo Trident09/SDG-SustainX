@@ -34,6 +34,11 @@
 		/>
 	</head>
 	<body>
+		<audio
+			id="entrySound"
+			src="https://s3.amazonaws.com/files.uploads.lastmileai.com/uploads/cltsxnuvr025tquys61gwaz7i/2024_3_16_6_24_38/3175/inputyourelectricityconsumptiondetailsintoo.mp3"
+			preload="auto"
+		></audio>
 		<div class="nav">
 			<nav>
 				<a href="/">
@@ -86,5 +91,19 @@
 				/>
 			</footer>
 		</section>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				var entrySound = $("#entrySound")[0]; // Get the native audio element for entry sound
+
+				// Attempt to play the entry sound on page load
+				entrySound.play().catch(function (error) {
+					console.error(
+						"Playback prevented due to browser restrictions. User must interact with the document.",
+						error
+					);
+				});
+			});
+		</script>
 	</body>
 </html>
