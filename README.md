@@ -38,11 +38,11 @@ The Green Footprint is a multi-faceted platform designed to promote sustainabili
 -   [Main GitHub Repository](https://github.com/Trident09/SDG-SuatainX)
 -   [Image Detection Custom Model (Google Colab)](https://colab.research.google.com/drive/1KRX8xM92F412yThksh9jnngM6zE1b5eY?usp=sharing)
 -   [NLP Sustainability Model (BERT) Google Colab](https://colab.research.google.com/drive/1J5_52NrQbPbcmKfUIwg_c3E_pYPALSbr?usp=sharing)
--   [Project Demo Video](https://www.youtube.com/watch?v=4TgCbsVNT6k)
+-   [Project Demo Video](https://www.youtube.com/watch?v=EhBQ25P-2ik)
 
 ## Project Demo
 
-[![The Green Footprint Demo](https://img.youtube.com/vi/4TgCbsVNT6k/0.jpg)](https://www.youtube.com/watch?v=4TgCbsVNT6k)
+[![The Green Footprint Demo](https://img.youtube.com/vi/EhBQ25P-2ik/0.jpg)](https://www.youtube.com/watch?v=EhBQ25P-2ik)
 
 ## Usage
 
