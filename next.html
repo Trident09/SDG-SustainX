@@ -6,17 +6,34 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="./favicon.ico"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="favicon-32x32.png"
+			sizes="32x32"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="favicon-16x16.png"
+			sizes="16x16"
+		/>
 		<title>Certificate</title>
 
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-            body {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                background-color: #013329;
-            }
+			body {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				background-color: #013329;
+			}
 			#center {
 				min-height: 100vh;
 				min-width: 100%;
@@ -75,8 +92,8 @@
 			document.addEventListener("DOMContentLoaded", function () {
 				const json = localStorage.getItem("userData"); // Assuming the name is stored with this key
 				const userData = JSON.parse(json);
-                const name = userData.name;
-                const loc = userData.location;
+				const name = userData.name;
+				const loc = userData.location;
 				const location = "From " + loc;
 				console.log(name);
 				console.log(location);
