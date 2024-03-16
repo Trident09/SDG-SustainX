@@ -38,6 +38,7 @@
 				min-height: 100vh;
 				min-width: 100%;
 				display: flex;
+				flex-direction: column;
 				justify-content: center;
 				align-items: center;
 				position: relative;
@@ -71,6 +72,106 @@
 				font-size: 24px;
 				color: black; /* Or any color that fits the certificate design */
 			}
+			.mouse {
+				margin-top: 6rem;
+				width: 25px;
+				height: 40px;
+				border: 1px solid rgb(196, 196, 196);
+				background-color: transparent;
+				border-radius: 13px;
+				border-bottom-left-radius: 20px;
+				border-bottom-right-radius: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+			}
+
+			.scroll {
+				width: 3px;
+				height: 10px;
+				background-color: rgb(196, 196, 196);
+				border-radius: 2px;
+				position: absolute;
+				bottom: 9px;
+				animation: move_918 1.5s linear infinite;
+			}
+
+			@keyframes move_918 {
+				0% {
+					bottom: 9px;
+				}
+
+				50% {
+					bottom: 5px;
+				}
+
+				100% {
+					bottom: 9px;
+				}
+			}
+
+			.next {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				color: white;
+				font-size: 2rem;
+				margin-top: 2rem;
+				width: 100%;
+			}
+			.cards {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1rem;
+			}
+
+			.cards .red {
+				background-color: #f43f5e;
+			}
+
+			.cards .blue {
+				background-color: #3b82f6;
+			}
+
+			.cards .green {
+				background-color: #22c55e;
+			}
+
+			.cards .card {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				text-align: center;
+				height: 100px;
+				width: 250px;
+				border-radius: 10px;
+				color: white;
+				cursor: pointer;
+				transition: 400ms;
+			}
+
+			.cards .card p.tip {
+				font-size: 1em;
+				font-weight: 700;
+			}
+
+			.cards .card p.second-text {
+				font-size: 0.7em;
+			}
+
+			.cards .card:hover {
+				transform: scale(1.1, 1.1);
+			}
+
+			.cards:hover > .card:not(:hover) {
+				filter: blur(10px);
+				transform: scale(0.9, 0.9);
+			}
 		</style>
 	</head>
 	<body>
@@ -83,6 +184,55 @@
 				/>
 				<div id="certificate-name"></div>
 				<div id="certificate-location"></div>
+			</div>
+
+			<a href="#next">
+				<button class="mouse">
+					<div class="scroll"></div>
+				</button>
+			</a>
+		</div>
+
+		<div
+			class="next"
+			id="next"
+		>
+			<div class="intro">
+				<p>
+					If You wish yo use the standalone tools you can check them
+					down below ! ...
+				</p>
+			</div>
+			<div class="tools">
+				<div class="cards">
+					<a
+						href="https://energyanalyzer.streamlit.app"
+						target="_blank"
+					>
+						<div class="card red">
+							<p class="tip">Energy Analyser</p>
+							<p class="second-text">Visit</p>
+						</div>
+					</a>
+					<a
+						href="https://sustainablebrands.streamlit.app"
+						target="_blank"
+					>
+						<div class="card blue">
+							<p class="tip">Sustainable Brands</p>
+							<p class="second-text">Visit</p>
+						</div>
+					</a>
+					<a
+						href="https://sustainablescore.streamlit.app"
+						target="_blank"
+					>
+						<div class="card green">
+							<p class="tip">Sustainable Score</p>
+							<p class="second-text">Visit</p>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 
