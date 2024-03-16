@@ -42,7 +42,7 @@ The Green Footprint is a multi-faceted platform designed to promote sustainabili
 
 ## Project Demo
 
-<video src="https://cdn.discordapp.com/attachments/912237053809426472/1218429029355487262/Project_demo.mp4?ex=6607a175&is=65f52c75&hm=8f4e0a1ae03549c624bcee465b69f32d8857fb8b031ceb6dd279205ad37ff0a2&" width="480" height="360" controls></video>
+[![The Green Footprint Demo](https://img.youtube.com/vi/4TgCbsVNT6k/0.jpg)](https://www.youtube.com/watch?v=4TgCbsVNT6k)
 
 ## Usage
 
