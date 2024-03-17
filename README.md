@@ -1,5 +1,13 @@
 # The Green Footprint | Track 3rd - Preserving the environment | 1st Position Winner 
 
+## Onjective:
+
+> Challenge yourself and your team to develop innovative solutions for pressing issues in three critical areas: gender equality, food security, and environmental sustainability. Ideate and Pitch your ideas while networking with leading industrialists.
+
+## Problem Statement:
+
+> Preserving the Environment: Craft solutions for a sustainable future. Focus on renewable energy, waste management, and promoting eco-friendly practices. Address climate change, protect biodiversity, and empower communities to make a positive impact.
+
 ![SDG-SustainX Logo](./assets/logoGreenFootPrint.svg)
 
 The Green Footprint is a multi-faceted platform designed to promote sustainability and awareness regarding energy consumption, product sustainability, and waste management. Our tools leverage the power of data analytics, natural language processing, and computer vision to provide users with actionable insights to make more eco-friendly decisions.
