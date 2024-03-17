@@ -1,4 +1,4 @@
-# The Green Footprint | Track 3rd - Preserving the environment | 1st Position Winner 
+# The Green Footprint | Track 3rd - Preserving the environment | 1st Position Winner
 
 ## Objective:
 
@@ -43,7 +43,7 @@ The Green Footprint is a multi-faceted platform designed to promote sustainabili
 ## Quick Links
 
 -   [Live Website](https://thegreenfootprint.vercel.app/)
--   [Main GitHub Repository](https://github.com/Trident09/SDG-SuatainX)
+-   [Main GitHub Repository](https://github.com/Trident09/SDG-SustainX)
 -   [Image Detection Custom Model (Google Colab)](https://colab.research.google.com/drive/1KRX8xM92F412yThksh9jnngM6zE1b5eY?usp=sharing)
 -   [NLP Sustainability Model (BERT) Google Colab](https://colab.research.google.com/drive/1J5_52NrQbPbcmKfUIwg_c3E_pYPALSbr?usp=sharing)
 -   [Project Demo Video](https://www.youtube.com/watch?v=EhBQ25P-2ik)
@@ -57,8 +57,8 @@ The Green Footprint is a multi-faceted platform designed to promote sustainabili
 Clone the repository:
 
 ```shell
-git clone https://github.com/Trident09/SDG-SuatainX.git
-cd SDG-SuatainX
+git clone https://github.com/Trident09/SDG-SustainX.git
+cd SDG-SustainX
 ```
 
 ### Data Analytics Dashboard
@@ -89,11 +89,11 @@ Contributions are welcome! Please feel free to submit a pull request or create a
 ## Team
 
 | <img src="https://avatars.githubusercontent.com/u/98939183?v=4" width="100" height="100"> | <img src="https://avatars.githubusercontent.com/u/43810146?v=4" width="100" height="100"> |
-|:--:|:--:|
-| [Trident09](https://github.com/Trident09) | [error9098x](https://github.com/error9098x) |
+| :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+|                         [Trident09](https://github.com/Trident09)                         |                        [error9098x](https://github.com/error9098x)                        |
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Trident09/SDG-SuatainX/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Trident09/SDG-SustainX/blob/main/LICENSE) file for details.
 
 ---
