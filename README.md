@@ -1,5 +1,7 @@
 # The Green Footprint | Track 3rd - Preserving the environment | 1st Position Winner
 
+## [Blog post](https://rupam.vercel.app/articles/sdg_impact-a-thon/)
+
 ## Objective:
 
 > Challenge yourself and your team to develop innovative solutions for pressing issues in three critical areas: gender equality, food security, and environmental sustainability. Ideate and Pitch your ideas while networking with leading industrialists.
